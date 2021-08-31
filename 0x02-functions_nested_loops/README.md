@@ -1,0 +1,1 @@
+This all are functions nested loops with list
