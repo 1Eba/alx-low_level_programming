@@ -1,15 +1,19 @@
 #include "holberton.h"
+#include <ctype.h>
 
 /**
- * _isalpha - checks for alphabetic character
- * @c: this variable is checked for whether or not it is a letter
- * Return: 1 if c is a letter, 0 if otherwise
+ * _isalpha - prints 1 or 0 depending on input
+ * @c: collects a char type
+ *
+ * Description: Checks for alphabets lower and uppercase
+ * Return: Always(0).
  */
 
 int _isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+	{
 		return (1);
-	else
-		return (0);
+	}
+	return (0);
 }
