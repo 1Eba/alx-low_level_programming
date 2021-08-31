@@ -1,24 +1,16 @@
 #include "holberton.h"
 
 /**
- * main - prints a word
- *
- * Description: just prints a statement
- * Return: Always(0) Success
+ * main - prints Holberton
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	_putchar('H');
-	_putchar('o');
-	_putchar('l');
-	_putchar('b');
-	_putchar('e');
-	_putchar('r');
-	_putchar('t');
-	_putchar('o');
-	_putchar('n');
-	_putchar('\n');
+	char *string = "Holberton\n";
+	int i;
 
+	for (i = 0; i < 10; i++)
+		_putchar(string[i]);
 	return (0);
 }
