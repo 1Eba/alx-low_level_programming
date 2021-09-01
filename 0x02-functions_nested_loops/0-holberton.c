@@ -3,7 +3,7 @@
 /**
  * main - prints "Holberton" followed by a new line
  *
- * Return: Always .
+ * Return: Always 0.
  */
 
 int main(void)
