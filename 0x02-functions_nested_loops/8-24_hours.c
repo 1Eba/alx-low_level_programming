@@ -1,29 +1,32 @@
-jack_bauer - Prints the minutes of a day
+#include "holberton.h"
+
+/**
+ * jack_bauer - Prints the minutes of a day
  *
-* Return: no return
+ * Return: no return
  */
 void jack_bauer(void)
 {
-  int a, b, c, d;
+	int a, b, c, d;
 
-  for (a = '0'; a <= '2'; a++)
-    {
-      for (b = '0'; b <= '9'; b++)
+	for (a = '0'; a <= '2'; a++)
 	{
-	  for (c = '0'; c <= '5'; c++)
-	    {
-	      for (d = '0'; d <= '9'; d++)
+		for (b = '0'; b <= '9'; b++)
 		{
-		  if (a >= '2' && b >= '4')
-		    break;
-		  _putchar(a);
-		  _putchar(b);
-		  _putchar(':');
-		  _putchar(c);
-		  _putchar(d);
-		  _putchar('\n');
+			for (c = '0'; c <= '5'; c++)
+			{
+				for (d = '0'; d <= '9'; d++)
+				{
+					if (a >= '2' && b >= '4')
+						break;
+					_putchar(a);
+					_putchar(b);
+					_putchar(':');
+					_putchar(c);
+					_putchar(d);
+					_putchar('\n');
+				}
+			}
 		}
-	    }
 	}
-    }
 }
