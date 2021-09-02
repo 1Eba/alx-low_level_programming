@@ -1,25 +1,23 @@
 #include "holberton.h"
 
 /**
- * print_line - prints a line unless n is less than 0
+ * print_line - print line
+ * @n: input value
  *
- * @n: there will be underscores printed for n times
+ * Description:  draws a straight line in the terminal
+ * Return: Always (0)
  */
 
 void print_line(int n)
 {
-	int l;
+	int i;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (l = 1; l <= n; l++)
+		for (i = 0; i < n; i++)
 		{
-			_putchar(95);
+			_putchar('_');
 		}
-	_putchar('\n');
 	}
+	_putchar('\n');
 }
