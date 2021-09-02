@@ -1,14 +1,17 @@
 #include "holberton.h"
 
 /**
- * _isupper - prints 1 or 0 depending on input
- * @c: input type variable
+ * _isupper - checks if c is an uppercase letter or not
  *
- * Description: checks for uppercase letters
- * Return: Aways (0).
+ * @c: this variable is checked for whether or not it is an uppercase letter
+ *
+ * Return: 1 if c is uppercase letter, 0 if not
  */
 
 int _isupper(int c)
 {
-	return (c >= 'A' && c <= 'Z');
+	if ((c >= 'A') && (c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
