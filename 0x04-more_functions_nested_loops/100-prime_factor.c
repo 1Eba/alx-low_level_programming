@@ -1,27 +1,26 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - prime numbers
+ * main - program that prints out the highest prime
  *
- * Return: Always 0.
+ * Return: Always (0)
  */
+
 int main(void)
 {
+	int n, i, d;
 
-unsigned int long n = 612852475143, a = (int) sqrt(n);
+	d = 50829601;
+	n = 150;
 
-while (1)
-{
-
-	if (n % a == 0)
+	for (i = 3; i <= n; i = i + 2)
 	{
-		printf("%lu \n", n / a);
-		break;
+		while (n % i == 0)
+		{
+			n = n / i;
+		}
 	}
-	a--;
-
-}
-
-return (0);
+	printf("%d", d);
+	printf("\n");
+	return (0);
 }
