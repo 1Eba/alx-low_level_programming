@@ -1,1 +1,1 @@
-All about more functions
+This function checks for uppercase letter.
