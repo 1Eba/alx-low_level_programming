@@ -10,7 +10,7 @@ int main(void)
 {
 	int n, i, d;
 
-	d = 50829601;
+	d = 612852475143;
 	n = 150;
 
 	for (i = 3; i <= n; i = i + 2)
