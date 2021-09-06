@@ -2,11 +2,11 @@
 
 /**
  * _puts - prints the string
- * 
- * @str: string to the printed
  *
- Return: void
-*/
+ * @str: sting to be printed
+ *
+ * Return: void
+ */
 
 void _puts(char *str)
 {
