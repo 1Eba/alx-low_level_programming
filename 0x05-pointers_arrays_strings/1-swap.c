@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * swap_int swaps two integer
+ * swap_int - swaps two integer
  *
  * @a: first integer
  * @b: second integer
@@ -13,6 +13,7 @@ void swap_int(int *a, int *b)
 {
 
   int temp;
+  
   temp = *a;
   *a = *b;
   *b = temp;
