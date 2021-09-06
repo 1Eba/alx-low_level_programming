@@ -1,12 +1,12 @@
-0;10;1c#include "holberon.h"
+#include "holberton.h"
 
 /**
- * _atoi - converts a string to an integer.
+ * _atoi - Converts a string to an integer.
  * @s: string
  * Return: int
  */
 
-int _atoi(cahr *s)
+int _atoi(char *s)
 {
 int sign = 1, i;
 unsigned int num = 0;
