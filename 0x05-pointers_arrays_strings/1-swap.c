@@ -6,13 +6,15 @@
  * @a: first integer
  * @b: second integer
  *
- * Return: void
+ * Description: swaps the values of two integers
+ * Return: Always (0);
  */
 
 void swap_int(int *a, int *b)
 {
 
-  int temp;  
+  int temp;
+  
   temp = *a;
   *a = *b;
   *b = temp;
