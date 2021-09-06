@@ -1,4 +1,4 @@
-#include "holberon.h"
+0;10;1c#include "holberon.h"
 
 /**
  * _atoi - converts a string to an integer.
