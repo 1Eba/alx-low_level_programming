@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * reset_to_98 - updates the value pointed to 98
+ * reset_to_98 - updates the value point to 98
  *
  * @n: value of adress n
  *
