@@ -5,7 +5,7 @@
 int main(void)
 {
 int i, sum, randomNumber;
-char *originalString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMOPQRSTUVWXYZ0123456789";
+char *originalString = "abcdefghijklmnopqrstuvwxyz";
 char finalString[300];
 
 srand(time(NULL));
