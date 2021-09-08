@@ -1,0 +1,1 @@
+About more function arrays and strings
