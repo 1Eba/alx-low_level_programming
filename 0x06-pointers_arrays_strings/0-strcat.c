@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _strcat - return the length of a strings
- * @s: pointer of character
- * Return: Always 0.
- */
+* _strlen - returns the lenght of a string
+*@s: poiter of character
+*Return: the length of a string
+*/
 int _strlen(char *s)
 {
 int len;
@@ -15,15 +15,14 @@ return (len);
 }
 
 /**
- * *_strcat - concatenates two strings
- * @dest: string to dest
- * @stc: string origin
- * Return: dest
- */
+* *_strcat - concatenates two strings
+*@dest: string to dest
+*@src: string origin
+*Return: dest
+*/
 char *_strcat(char *dest, char *src)
 {
 int i, lendest, lensrc;
-
 
 lendest = _strlen(dest);
 lensrc = _strlen(src);
