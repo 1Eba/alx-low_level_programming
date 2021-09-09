@@ -1,16 +1,12 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
- * infinite_add - Add 2 integers.
- *
+ * infinite_add - Add two integers.
  * @n1: integer
- *
  * @n2: integer
- *
  * @r: buffer
- *
  * size_r: size of r
- *
  * Return: char
  */
 
