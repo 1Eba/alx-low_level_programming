@@ -1,2 +1,0 @@
-gcc -c libholberton.c -o libholberton.o
-ar rcs libholberton.o libholberton.c
