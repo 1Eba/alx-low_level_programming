@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-* main - program that multiples 2 numbers
+* main - program that multiplies 2 numbers
 *@argc: argument count
 *@argv: string of pointers
-* Return: 0 (success)
+*Return: 0 (success)
 */
 int main(int argc, char *argv[])
 {
