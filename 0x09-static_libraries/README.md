@@ -1,1 +1,1 @@
-All about Static librarie
+Static librarie
