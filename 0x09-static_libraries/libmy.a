@@ -1,5 +1,13 @@
 #!/bin/bash
-`0-isupper.o:
+/**
+ * source_0 - Source 0
+ * Return: Always 0
+ */
+int source_0(void)
+{
+	return (0);
+}
+0-isupper.o:
 0000000000000000 T _isupper
 
 0-memset.o:
