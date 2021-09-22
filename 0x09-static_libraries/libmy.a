@@ -1,2 +1,2 @@
-#!/bin/bash
 r -t libmy.a
+nm libmy.a
