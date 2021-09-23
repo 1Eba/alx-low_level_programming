@@ -1,10 +1,11 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
 * _strlen - returns the lenght of a string
-*@s: poiter of character
-*Return: the length of a string
+* @s: poiter of character
+* Return: the length of a string
 */
 int _strlen(char *s)
 {
@@ -18,10 +19,10 @@ return (len);
 
 /**
 * *string_nconcat - concatenates two strings
-*@s1: first string to concatenate
-*@s2: second string to concatenate
-*@n: number of bytes to concatenate
-*Return: the pointer concatenate or null
+* @s1: first string to concatenate
+* @s2: second string to concatenate
+* @n: number of bytes to concatenate
+* Return: the pointer concatenate or null
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -45,15 +46,15 @@ if (str == NULL)
 return (NULL);
 
 /**Concatenate the string*/
-for (i = 0; s1[i] != '\0'; i++)
+for (i = 0; s1[i] != ('\0'); i++)
 {
 str[i] = s1[i];
 }
 
-for (j = 0; s2[j] != '\0' && j < n; j++, i++)
+for (j = 0; s2[j] != ('\0') && j < n; j++, i++)
 {
 str[i] = s2[j];
 }
-str[i] = '\0';
+str[i] = ('\0');
 return (str);
 }
