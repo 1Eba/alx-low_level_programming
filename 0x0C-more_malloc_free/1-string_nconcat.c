@@ -1,59 +1,43 @@
 #include "holberton.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
-* _strlen - returns the lenght of a string
-* @s: poiter of character
-* Return: the length of a string
-*/
-int _strlen(char *s)
-{
-unsigned int len;
+ * string_nconcat - concatenate two strings, only n bytes of s2
+ * @s1: string one
+ * @s2: string two
+ * @n: bytes to include of s2
+ * Return: NULL if fail, else pointer to malloc memory
+ */
 
-len = 0;
-while (*(s + len) != '\0')
-len++;
-return (len);
-}
-
-/**
-* *string_nconcat - concatenates two strings
-* @s1: first string to concatenate
-* @s2: second string to concatenate
-* @n: number of bytes to concatenate
-* Return: the pointer concatenate or null
-*/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int l1, i, j;
-char *str;
+	char *concat;
+	unsigned int len = n, index;
 
-/**verify if s1 or s2 is null*/
-if (s1 == NULL)
-s1 = "";
-if (s2 == NULL)
-s2 = "";
+	if (s1 == NULL)
+		s1 = "";
 
-/**calculate the lenght of the strings*/
-l1 = _strlen(s1);
+	if (s2 == NULL)
+		s2 = "";
 
-/**asign the memorty to the pointer*/
-str = malloc((l1 + (n * sizeof(*s2) + 1)) * sizeof(*str));
+	for (index = 0; s1[index]; index++)
+		len++;
 
-/**Verify if the memory is avaiable*/
-if (str == NULL)
-return (NULL);
+	concat = malloc(sizeof(char) * (len + 1));
 
-/**Concatenate the string*/
-for (i = 0; s1[i] != '\0'; i++)
-{
-str[i] = s1[i];
-}
+	if (concat == NULL)
+		return (NULL);
 
-for (j = 0; s2[j] != '\0' && j < n; j++, i++)
-{
-str[i] = s2[j];
-}
-str[i] = '\0';
-return (str);
+	len = 0;
+
+	for (index = 0; s1[index]; index++)
+		concat[len++] = s1[index];
+
+	for (index = 0; s2[index] && index < n; index++)
+		concat[len++] = s2[index];
+
+	concat[len] = '\0';
+
+	return (concat);
 }
