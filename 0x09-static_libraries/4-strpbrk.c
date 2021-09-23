@@ -9,7 +9,6 @@
  * Description: searches a string for any of a set of bytes
  * Return: resturns accepted string
  */
-
 char *_strpbrk(char *s, char *accept)
 {
 	int i, j, len, exist = 0;

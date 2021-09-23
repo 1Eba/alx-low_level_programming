@@ -7,7 +7,6 @@
  * Description: uses pointers
  * Return: Alawy (0)
  */
-
 int _strlen(char *s)
 {
 	int i;

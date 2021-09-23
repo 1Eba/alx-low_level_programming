@@ -10,7 +10,6 @@
  * Return: returns a pointer to the
  * beginning of the located substring, else, NULL
  */
-
 char *_strstr(char *haystack, char *needle)
 {
 	char *first, *compare;

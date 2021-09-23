@@ -1,20 +1,13 @@
 #include "holberton.h"
 
 /**
- * _puts - put string
- * @str: first parameter
+ * _islower - prints one or zero depending on input
+ * @c: first parameter
  *
- * Description: prints a string
- * Return: Alwalys (0)
+ * Description: prints all lowercase letters
+ * Return: Always(0).
  */
-
-void _puts(char *str)
+int _islower(int c)
 {
-	while (*str != '\0')
-	{
-		_putchar(*str);
-		str++;
-	}
-	_putchar('\n');
+	return (c >= 'a' && c <= 'z');
 }
-

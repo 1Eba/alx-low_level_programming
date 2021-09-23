@@ -9,7 +9,6 @@
  * Description: use at most n bytes from src
  * Return: returns concatenated string
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
 	int len, i;

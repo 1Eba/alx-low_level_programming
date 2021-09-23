@@ -7,7 +7,6 @@
  * Description: takes all types of char
  * Return: 0 for success
  */
-
 int _atoi(char *s) 
 { 
 	int result, sign, i;

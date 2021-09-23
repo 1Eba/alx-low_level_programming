@@ -8,7 +8,6 @@
  * Description: the function compares two strings
  * Return: character count
  */
-
 int _strcmp(char *s1, char *s2)
 {
 	int i, diff;

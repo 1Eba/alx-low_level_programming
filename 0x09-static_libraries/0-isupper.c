@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _isupper - prints 1 or 0 depending on input
+ * _isupper - prints one or zero depending on input
  * @c: input type variable
  *
  * Description: checks for uppercase letters

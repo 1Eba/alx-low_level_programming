@@ -8,7 +8,6 @@
  * Description: appends the src string to the dest string
  * Return: dest
  */
-
 char *_strcat(char *dest, char *src)
 {
 	int i, len;
