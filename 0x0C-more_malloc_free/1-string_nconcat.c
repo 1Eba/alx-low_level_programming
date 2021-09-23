@@ -46,15 +46,15 @@ if (str == NULL)
 return (NULL);
 
 /**Concatenate the string*/
-for (i = 0; s1[i] != ('\0'); i++)
+for (i = 0; s1[i] != '\0'; i++)
 {
 str[i] = s1[i];
 }
 
-for (j = 0; s2[j] != ('\0') && j < n; j++, i++)
+for (j = 0; s2[j] != '\0' && j < n; j++, i++)
 {
 str[i] = s2[j];
 }
-str[i] = ('\0');
+str[i] = '\0';
 return (str);
 }
