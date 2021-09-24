@@ -147,5 +147,5 @@ c++;
 print_array(tabres, lenres);
 free(tabres);
 exit(EXIT_SUCCESS);
-return ('\n');
+return (0);
 }
