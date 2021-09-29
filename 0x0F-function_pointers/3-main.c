@@ -1,28 +1,30 @@
 #include "3-calc.h"
+#include <string.h>
 
 /**
- * main - performs simple operations
- * @argc: argument count
- * @argv: argument vector
- * Return: 1 for success
+ * get_op_func - selects the correct function to perform
+ * the operation asked by the user.
+ * @s: char operator.
+ *
+ * Return: pointer to the function that corresponds to the operator.
  */
-
-int main(int argc, char *argv[])
+int (*get_op_func(char *s))(int, int)
 {
-	register int a, b;
-	int (*fptr)(int, int);
+op_t ops[] = {
+{"+", op_add},
+{"-", op_sub},
+{"*", op_mul},
+{"/", op_div},
+{"%", op_mod},
+{NULL, NULL}
+};
+int i = 0;
 
-	if (argc != 4)
-	{
-		printf("Error\n"), exit(98);
-	}
-	fptr = get_op_func(argv[2]);
-	if (!fptr)
-	{
-		printf("Error\n"), exit(99);
-	}
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-	printf("%i\n", fptr(a, b));
-	return (1);
+while (i < 10)
+{
+if (s[0] == ops->op[i])
+break;
+i++;
 }
+
+return (ops[i / 2].f);
