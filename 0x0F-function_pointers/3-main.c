@@ -6,7 +6,6 @@
  * @argv: argument vector
  * Return: 1 for success
  */
-
 int main(int argc, char *argv[])
 {
 	register int a, b;

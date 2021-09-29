@@ -6,7 +6,6 @@
  *
  * Return: 0 for code succes
  */
-
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
