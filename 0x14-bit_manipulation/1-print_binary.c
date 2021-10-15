@@ -1,27 +1,48 @@
-#include "holberton.h"
-#include <stdio.h>
+#include "main.h"
+
 /**
- * bin - converts decimal to binary and prints
- * @n: number to convert
+ * _pow - calculates (base ^ power)
+ * @base: base of the exponent
+ * @power: power of the exponent
+ *
+ * Return: value of (base ^ power)
  */
-void bin(unsigned long int n)
+unsigned long int _pow(unsigned int base, unsigned int power)
 {
-	if (n != 0)
-	{
-		bin(n >> 1);
-		_putchar((n & 1) + '0');
-	}
+	unsigned long int num;
+	unsigned int i;
+
+	num = 1;
+	for (i = 1; i <= power; i++)
+		num *= base;
+	return (num);
 }
+
 /**
- * print_binary - prints binary representation
- * @n: number to convert
+ * print_binary - prints a number in binary notation
+ * @n: number to print
+ *
+ * Return: void
  */
 void print_binary(unsigned long int n)
 {
-	if (n == 0)
-		_putchar('0');
-	else
+	unsigned long int divisor, check;
+	char flag;
+
+	flag = 0;
+	divisor = _pow(2, sizeof(unsigned long int) * 8 - 1);
+	while (divisor != 0)
 	{
-		bin(n);
+		check = n & divisor;
+		if (check == divisor)
+		{
+			flag = 1;
+			_putchar('1');
+		}
+		else if (flag == 1 || divisor == 1)
+		{
+			_putchar('0');
+		}
+		divisor >>= 1;
 	}
 }
