@@ -1,32 +1,48 @@
-#include "holberton.h"
+#include "main.h"
 /**
-* read_textfile - read a text file
-* @filename: name of a text file
-* @letters: size
+* read_textfile - Entry point
+* Description - A function that reads a text file
+* and prints it to the POSIX standard output
+* *@filename: the function accepts an input saved into filename
+* *@letters: letters is the number of letters it should read and print
 * Return: the actual number of letters it could read and print
-* On error, 0 is returned.
 */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int file, letters2 = 0;
-	char *buff;
+	int toOpen, toRead, toWrite;
+	char *buf;
 
-	if (!filename)
+	/**
+	* Create and return a pointer memory
+	* location to where your data is to go
+	* or come from
+	*/
+	buf = malloc(sizeof(char) * letters);
+
+	if (buf == NULL)
 		return (0);
 
-	buff = malloc((letters + 1) * sizeof(char));
-	if (buff == NULL)
+	if (filename == NULL)
 		return (0);
 
-	buff[letters] = '\0';
-	file = open(filename, O_RDONLY);
-	if (file == -1)
-		return (0);
+	/* Opening of the file */
+	toOpen = open(filename, O_RDONLY);
 
-	letters2 =  read(file, buff, letters);
-	write(STDOUT_FILENO, buff, letters2);
-	close(file);
-	free(buff);
-	return (letters2);
+	/* Reading the opened file */
+	toRead = read(toOpen, buf, letters);
+
+	/* Writing the already read file */
+	toWrite = write(STDOUT_FILENO, buf, toRead);
+
+	/* To check if there is an error of some sort */
+	if (toOpen == -1 || toRead == -1 || toWrite == -1 || toWrite != toRead)
+	{
+		free(buf);
+		return (0);
+	}
+
+	free(buf);
+	close(toOpen);
+
+	return (toWrite);
 }
