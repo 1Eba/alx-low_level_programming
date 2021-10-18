@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * main - a program that displays the information contained 
@@ -6,7 +6,7 @@
  * Return: nothing 
  */
 
-int main(char argc, int *argv[])
+int (argc *(argv)[])
 {
 	return (0);
 }
