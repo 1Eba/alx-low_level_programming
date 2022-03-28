@@ -1,5 +1,5 @@
-###0x1E. C - Search Algorithms
- <!-- By Wilfried Hennuyer
+0x1E. C - Search Algorithms
+By Wilfried Hennuyer
 
 Resources
 Read or watch:
@@ -40,4 +40,3 @@ sqrt n -> O(sqrt(n))
 log(n) -> O(log(n))
 n * log(n) -> O(nlog(n))
 …
--->
