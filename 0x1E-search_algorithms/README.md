@@ -1,8 +1,8 @@
 0x1E. C - Search Algorithms
-By Wilfried Hennuyer
+- By Wilfried Hennuyer
 
-Resources
-Read or watch:
+- Resources
+- Read or watch:
 
 Search algorithm
 Space complexity (1)
